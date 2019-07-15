@@ -9,13 +9,27 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
+  <header>
+    <h2><a href="#" target="_blank"><img src="images/Sample-Icon.png" alt=""></a></h2>
+    <nav>
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#getting-around">Travel</a></li>
+        <li><a href="#famous-quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#social-media">Links</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- ************ HERO ************** -->
   <body id="top">
   	<div id="hero">
-  		<div class="background-image"></div>
   		<h1>Kinfolk Scenester Synth</h1>
   		<h3>Narwhal quinoa blue bottle hella deep v bitters</h3>
   		<a href="https://unsplash.com/" class="btn" target="_blank">More Kinfolk</a>
@@ -98,7 +112,7 @@
     </div>
 
   	<!-- ************FOOTER************** -->
-  	<footer>
+  	<footer id="social-media">
   		<ul>
   			<li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
   			<li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
@@ -108,7 +122,21 @@
   		<p>&ldquo;Kale chips selfies waistcoat, letterpress blue bottle taxidermy you probably haven't heard of them intelligentsia kogi gentrify af tumeric.&rdquo; <br>
   		&mdash;Ben Franklin</p>
   	</footer>
-
+    <script type="text/javascript">
+      $( document ).ready(function() {
+      $("a").on('click', function(event){
+        if (this.hash !== ""){
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top-150
+            }, 800, function() {
+          window.location.hash = hash-100;
+          });
+        } //End if   
+      });
+      });
+    </script>
   </body>
 
 
