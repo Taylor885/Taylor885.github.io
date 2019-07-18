@@ -25,6 +25,7 @@ li:hover {
 /* ---- Helpers ---- */
 .img-responsive {
 	width: 100%;
+	display: block;
 }
 .margin-auto {
 	margin: 0 auto;
@@ -32,6 +33,16 @@ li:hover {
 .text-justify {
 	text-align: justify;
 }
+.text-height {
+	line-height: 170%;
+}
+.flex-container {
+	display: flex;
+}
+.margin-TopBot{
+	margin: 20px 0;
+}
+
 
 
 /* ---- HEADER ------ */
@@ -72,7 +83,7 @@ li:hover {
 }
 .nav-links img {
 	height: 100%;
-	padding-top: 0px;
+	
 }
 .nav-links li {
 	padding-top: 15px;
@@ -102,12 +113,38 @@ li:hover {
 /* ---- MAINCONTENT ------ */
 .mainContent {
 	width: 80%;
+	margin-bottom: 50px;
 }
-
-
-
-
-
+.textStructure {
+	text-align: center;
+	width: 60%;
+}
+#rewardsImage {
+	margin: 40px 0 20px;
+}
+#headerText {
+	margin: 10px 0;
+}
+.topBox {
+	text-align: center;
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+}
+.flex-twos {
+	flex: 1 1 30%;
+}
+.square-images {
+	margin: 10px 0;
+}
+.image-left {
+	padding-right: 10px;
+}
+.image-right {
+	padding-left: 10px;
+}
+.bottomBox {
+	margin-top: 10px;
+}
 
 
 
